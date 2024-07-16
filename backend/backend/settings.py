@@ -87,10 +87,6 @@ DATABASES = {
     }
 }
 
-# CORS_ALLOWED_ORIGINS = [
-#     'http://localhost:4173',
-# ]
-
 CORS_ALLOW_ALL_ORIGINS = True
 
 INTERNAL_IPS = [

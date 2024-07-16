@@ -31,6 +31,3 @@ def get_campaigns(request):
     elif request.method == "DELETE":
         Campaign.objects.all().delete()
         return JsonResponse({'message': 'campaigns were deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
-
-
-
