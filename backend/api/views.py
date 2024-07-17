@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -7,14 +7,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Campaign
 from .serializers import CampaignSerializer
-
-import logging
-
-logger = logging.getLogger(__name__)
-
-# Create your views here.
-# def index(request):  
-#     return HttpResponse("Hello, world.")
 
 @api_view(['GET', 'POST', 'DELETE'])
 def get_campaigns(request):
